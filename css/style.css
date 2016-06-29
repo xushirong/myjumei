@@ -84,7 +84,6 @@ body{
 }
 #header .list .transport:hover i,#header .right .myjm:hover i,#header .right .more:hover i{
     background: url("../images/sprites.png");
-
     background-position: 0 0;
 }
 #header .list:hover .transport{
@@ -158,10 +157,13 @@ body{
     width: 13px;
     height: 15px;
 }
-#header .right .myjm,#header .right .more{
+#header .right .myjm{
     position: relative;
     padding-left: 10px;
-
+}
+#header .right .more{
+    position: relative;
+    padding-left: 5px;
 }
 #header .right .myjm:hover,#header .right .more:hover{
     background: #fff;
@@ -887,10 +889,8 @@ body{
     margin: 10px 0 10px 2px;
 }
 #slide .shop a span  i{
-    background: #ed145b;
     padding: 1px;
-    border: 2px solid #ed145b;
-    border-radius: 50%;
+
 }
 #slide ul li:hover .bill{
     display: block;

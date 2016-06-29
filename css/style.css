@@ -1,0 +1,1055 @@
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,table,tbody,thead,tfoot,tr,th,td,caption,a,input,form,select,
+option,label,textarea,img,span,i,b,em,strong,sub,sup,u{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei", Arial, SimSun;
+    font-size: 12px;
+}
+i,em{
+    font-style: normal;
+}
+ul,ol,dl{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #999999;
+    cursor: pointer;
+}
+img,input{
+    border: none;
+    vertical-align: middle;
+    outline:none;
+}
+/*.clear{*/
+    /*clear: both;*/
+    /*height: 0;*/
+    /*line-height: 0;*/
+    /*font-size: 0;*/
+/*}*/
+
+.clear:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+}
+.w1090{
+    margin: 0 auto;
+    width: 1090px;
+}
+
+/*全局默认样式重置*/
+body{
+      background:#f7f7f7;;
+}
+/*header中的top开始*/
+#header .top{
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #f2f2f2;;
+}
+#header a:hover{
+    color: red;
+}
+#header .left li{
+    float: left;
+    padding-right: 24px;
+    color: #999999;
+}
+#header .list{
+    position: relative;
+    float: left;
+    padding-right: 230px;
+}
+#header .list a.transport{
+    display: inline-block;
+    width: 78px;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+#header .list b{
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 10px;
+}
+#header .list i,#header .right i{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: url("../images/sprites.png");
+    background-position: -34px 0;
+}
+#header .list .transport:hover i,#header .right .myjm:hover i,#header .right .more:hover i{
+    background: url("../images/sprites.png");
+
+    background-position: 0 0;
+}
+#header .list:hover .transport{
+    background: #fff;
+    color: #999999;
+}
+#header .list:hover dl{
+    display: block;
+  }
+#header .list dl{
+    position: absolute;
+    display: none;
+    background: #fff;
+    z-index: 10;
+}
+#header .list dt{
+    width: 78px;
+    height: 29px;
+    float: left;
+    text-align: center;
+    border: 1px solid #ededed;
+    border-top: none;
+}
+#header .list .select{
+    background: #ed145b;
+    color: white;
+}
+#header .list dd{
+    width: 390px;
+    height: 29px;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+
+}
+#header .list dd a{
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+
+
+#header .right li{
+    float: left;
+    padding-right: 12px;
+}
+#header .right .brand b{
+    display: inline-block;
+    width: 9px;
+    height: 8px;
+    background: url("../images/header_sprites1.png");
+}
+#header .right .line b{
+    display: inline-block;
+    margin-left: 10px;
+    width: 1px;
+    height: 11px;
+    background-color:#dddddd;
+}
+#header .right .phone b,#header .right .comment b{
+    display: inline-block;
+    background: url("../images/header_sprites1.png");
+}
+#header .right .phone b{
+    background-position: 0 -21px;
+    width: 10px;
+    height: 14px;
+}
+#header .right .comment b{
+    background-position: 0 -45px;
+    width: 13px;
+    height: 15px;
+}
+#header .right .myjm,#header .right .more{
+    position: relative;
+    padding-left: 10px;
+
+}
+#header .right .myjm:hover,#header .right .more:hover{
+    background: #fff;
+}
+#header .right .myjm:hover .subList,#header .right .more:hover .subList{
+    display: block;
+}
+#header .right .subList{
+    display: none;
+    position: absolute;
+    right: -1px;
+    border: 1px solid #ededed;
+    border-top: none;
+    background: #fff;
+    z-index: 10;
+}
+#header .right .subList li{
+    width: 110px;
+   }
+#header .right .subList li a{
+   padding-left: 30px;
+}
+#header .right .more .subList li{
+    position: relative;
+}
+#header .right .more .subList li a:hover img{
+    display: block;
+}
+#header .right .more .subList li a img{
+    display: none;
+    position: absolute;
+    left: -90px;
+    bottom: 0px;
+    border: 1px solid #ededed;
+    padding: 10px;
+    background: #fff;
+}
+/*header中的top结束*/
+
+/*header中的middle开始*/
+#header .middle{
+    height: 110px;
+    width: 100%;
+    background: #fff;
+    vertical-align: bottom;
+}
+.middle .w1090{
+    position: relative;
+}
+#header .middle .logo{
+    float: left;
+    background:url("../images/logo.jpg") no-repeat 0 8px;
+    width: 165px;
+    height: 85px;
+    padding-right: 135px;
+}
+#header .middle .searchbox{
+    float: left;
+    padding-top: 28px;
+    /*padding-right: 120px;*/
+}
+#header .middle .searchbox form{
+    position: relative;
+    border: 3px solid #ed145b;
+    height: 32px;
+    width: 530px;
+}
+#header .searchbox form input[type=text]{
+    line-height: 32px;
+    vertical-align: middle;
+    padding-left: 5px;
+    color: #999999;
+}
+
+#header  .searchbox form .btn{
+    position: absolute;
+    right: 0;
+    width: 97px;
+    height: 32px;
+    background: #ed145b;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+}
+#header .middle .searchbox ul{
+    padding: 9px;
+}
+#header .middle .searchbox ul li{
+    float: left;
+}
+#header .middle .searchbox ul li b{
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 1px;
+    height: 12px;
+    background-color:#999999;
+}
+
+#header .middle .shopList{
+    position: absolute;
+    right: 0;
+    top:30px;
+    border: 2px solid #e5e5e5;
+    width: 138px;
+    height: 32px;
+    z-index: 2;
+}
+#header .middle .shopList:hover{
+    border-bottom: none;
+}
+#header .middle .shopList:hover .shoping{
+    background: #fff;
+}
+#header .middle .shopList:hover .car{
+    display: block;
+    border-top: none;
+}
+#header .middle .shopList .pic{
+    padding:2px 9px;
+    float: left;
+}
+
+
+#header .middle .shopList .shoping{
+    position: absolute;
+    right: 0;
+    width: 92px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align:middle;
+    text-align: center;
+    background:#f8f8f8;
+
+}
+#header .middle .shopList .shoping a:hover i{
+    background-position: 0 0;
+}
+#header .middle .shopList .shoping a i{
+    display:inline-block;
+    vertical-align: middle;
+    width: 7px;
+    height: 4px;
+    background: url("../images/sprites.png");
+    background-position: -34px 0;
+}
+#header .middle .shopList .car{
+    display: none;
+    position: absolute;
+    right: -2px;
+    top:32px;
+    z-index: 1;
+    background: #fff;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+    width: 298px;
+    height: 56px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+#header .middle .shopList .car b{
+    background: #e5e5e5;
+    position: absolute;
+    right: 140px;
+    top:0;
+    width: 112px;
+    height: 2px;
+}
+
+/*middle结束*/
+
+/*nav开始*/
+#header .nav{
+    background: #1b1b1b;
+    width: 100%;
+    height:38px;
+}
+#header .nav .navUl{
+    float: left;
+    position: relative;
+}
+#header .nav ul li{
+    float: left;
+    width: 108px;
+    line-height: 38px;
+    text-align: center;
+}
+#header .nav ul li.bg1{
+    background: #ed145b;
+}
+#header .nav ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight:bold;
+    cursor: pointer;
+}
+#header .nav ul li a:hover{
+    opacity: 0.7;
+    filter:'alpha(opacity=70)';
+}
+#header .nav ul .muy a img{
+    margin-top: -15px;
+}
+#header .nav .icon{
+    float: right;
+    line-height: 38px;
+    vertical-align: middle;
+}
+#header .nav .icon a{
+    padding-left: 10px;
+}
+
+
+
+#header .nav ul .beauty i{
+    display: inline-block;
+    margin-left: 5px;
+    width: 6px;
+    height: 3px;
+    vertical-align: middle;
+    background: url("../images/sprites.png") no-repeat;
+    background-position: -64px 0;
+}
+#header .nav ul .beauty a:hover i{
+    background-position: -1px 0;
+}
+#header .nav .navUl .beauty:hover .beBox{
+    display: block;
+}
+#header .nav .navUl .beauty .beBox{
+    z-index: 10;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 1180px;
+    height: 310px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+}
+#header .nav .navUl .beauty .beBox .beImg{
+    width: 264px;
+}
+#header .nav .navUl .beauty .beBox .beImg a img{
+    margin: 10px 0 0 10px;
+}
+#header .nav .navUl .beauty .beBox .beList{
+    position: absolute;
+    left: 270px;
+    top:0;
+}
+#header .nav .navUl .beauty .beBox .beList dl b{
+    background: url("../images/nav.png");
+    background-position: 0 -168px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+#header .nav .navUl .beauty .beBox .beList dl{
+    width: 264px;
+    float: left;
+    border: 1px dashed #dddddd;
+    border-top:none;
+}
+#header .nav .navUl .beauty .beBox .beList dl .itempng{
+    margin-left: -150px;
+    margin-top:10px;
+}
+#header .nav .navUl .beauty .beBox .beList dl dt a{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+#header .nav .navUl .beauty .beBox .beList dl dd{
+   float: left;
+   padding-left:22px;
+   line-height: 32px;
+}
+#header .navUl .beauty .beBox .beList a{
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+/*nav结束*/
+/*header也结束*/
+
+
+/*轮播图  banner*/
+#banner{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+#banner .imgWrap{
+    background: url("../images/default.gif") center center no-repeat #e1e1e1;
+}
+.banner .imgWrap div{
+    position: absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+    filter:'alpha(opacity=0)';
+}
+.banner .imgWrap div img{
+    width: 100%;
+    height:350px;
+}
+.banner ul{
+    position: absolute;
+    left:600px;
+    bottom:10px;
+    overflow: hidden;
+    z-index:1;
+}
+.banner ul li{
+    float: left;
+    width: 10px;
+    height:10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-left:10px;
+    cursor: pointer;
+}
+.banner ul li.bg{
+    background: #ed145b;
+}
+/*轮播图  banner  结束*/
+
+/*hot开始*/
+#hot{
+    background:#f7f7f7;
+}
+#hot ul{
+    margin:20px auto;
+    width: 464px;
+}
+#hot ul li{
+    width: 230px;
+    height:45px;
+    line-height: 45px;
+    float: left;
+    border: 1px solid #666666;
+    font-size: 22px;
+    text-align: center;
+}
+#hot ul li.select{
+    position: relative;
+    background-color: #666666;
+    color: white;
+}
+#hot ul b{
+    position: absolute;
+    left: 110px;
+    bottom: -20px;
+    border-width: 10px;
+    border-style:solid;
+    border-color:#666666 transparent transparent transparent;
+}
+#hot .hotList a img{
+
+}
+#hot .hotList div{
+    width: 535px;
+    height:212px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 4px;
+    display: inline-block;
+}
+/*hot结束*/
+
+
+#footer{
+    background: #fff;
+}
+#footer .footer_top{
+    padding-top:30px ;
+}
+#footer .footer_top li{
+    float: left;
+    margin-right: 5px;
+    width: 150px;
+    height: 155px;
+    text-align: center;
+}
+#footer .footer_top li a:hover{
+    color: #000000;
+}
+#footer .footer_top li .pic{
+    margin-left: 35px;
+    background:url("../images/footer1.jpg");
+    display: block;
+    width: 63px;
+    height: 63px;
+}
+#footer .footer_top li .p1{
+    background-position: 0 0;
+}
+#footer .footer_top li .p2{
+    background-position: -63px 0;
+}
+#footer .footer_top li .p3{
+    background-position: -125px 0;
+}
+#footer .footer_top li .p4{
+    background-position: -191px 0;
+}
+#footer .footer_top li .p5{
+    background-position: -254px 0;
+}
+#footer .footer_top li .p6{
+    background-position: -317px 0;
+}
+#footer .footer_top li .p7{
+    background-position: -380px 0;
+}
+#footer .footer_top li b{
+    font-size: 16px;
+    font-weight: 900;
+    color: #000000;
+    display: block;
+    padding-top: 24px;
+}
+#footer .footer_top li i{
+    display: block;
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+
+#footer .footer_links{
+    padding-top: 20px;
+}
+#footer .footer_links ul{
+    margin-left: 30px;
+    float: left;
+    width: 120px;
+    /*border: 1px solid #000000;*/
+}
+#footer .footer_links .linksa{
+    width: 150px;
+}
+#footer .footer_links ul .links{
+    font-size: 14px;
+    font-weight: 700;
+}
+#footer .footer_links ul li{
+    line-height: 22px;
+    -webkit-transition: all 0.4s linear 0s;
+    transition: all 0.4s linear 0s;
+}
+#footer .footer_links ul li:hover{
+    -webkit-transform:translate(10px);
+    transform:translate(10px);
+}
+#footer .footer_links ul .links:hover,#footer .footer_links .links_er_box ul li{
+    -webkit-transform:translate(0px);
+    transform:translate(0px);
+}
+#footer .footer_links ul li a:hover{
+    color: #fe6397;
+}
+#footer .links_er_box{
+    text-align: center;
+}
+#footer .links_er_box .linksf span,#footer .links_er_box .linksg span{
+    display: block;
+    margin-left: 20px;
+    background: url("../images/footer2.png");
+    width: 80px;
+    height: 80px;
+}
+#footer .links_er_box .linksf span{
+    background-position: 0 -423px;
+}
+#footer .links_er_box .linksg span{
+    background-position: -80px -423px;
+}
+#footer .footer_nav{
+    width: 100%;
+    background: #333333;
+    height: 50px;
+}
+#footer .footer_nav ul li{
+    margin-left:15px ;
+    float: left;
+
+    line-height: 50px;
+
+}
+#footer .footer_nav ul li a{
+    color: #fff;
+}
+#footer .footer_bottom{
+    width: 100%;
+    height: 210px;
+    background: #3e3e3e;
+    background:-webkit-linear-gradient(to right,#3e3e3e,#424242);
+}
+#footer .footer_bottom p{
+    padding: 20px 0 15px 15px;
+    line-height: 24px;
+    color: #cccccc;
+}
+
+#footer .footer_bottom span{
+    margin-left: 15px;
+    width: 128px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 5px;
+    background: url("../images/footer2.png");
+}
+#footer .footer_bottom .span1{
+    background-position: 0 -167px;
+}
+#footer .footer_bottom .span2{
+    background-position: 0 -219px;
+    cursor: pointer;
+}
+#footer .footer_bottom .span3{
+    background-position: 0 -270px;
+}
+#footer .footer_bottom .span4{
+     background-position: 0 -320px;
+ }
+#footer .footer_bottom .span5{
+    background-position: 0 -371px;
+    cursor: pointer;
+}
+
+
+
+#today,#meiZhuang,#cloth,#bag{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+#today .newPro, #meiZhuang .newPro,#cloth .newPro,#bag .newPro{
+    background: url("../images/main.png") no-repeat;
+    width: 1090px;
+    height: 26px;
+    display: inline-block;
+    border-bottom: 2px solid #000;
+}
+#today .newPro{
+    background-position: 0 -202px;
+}
+#meiZhuang .newPro{
+    background-position: 0 0;
+}
+#cloth .newPro{
+    background-position: 0 -28px;
+}
+#bag .newPro{
+    background-position: 0 -58px;
+}
+#today  p,#meiZhuang p,#cloth p,#bag p{
+    position: absolute;
+    right: 150px;
+    bottom:10px;
+    float: right;
+    color: #e00a50;
+}
+
+#proBox{
+    width: 100%;
+    height: 100%;
+}
+#proBox ul li{
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background: #fff;
+    width: 330px;
+    height: 450px;
+    /*display: inline-block;*/
+    float: left;
+    position: relative;
+
+}
+#proBox ul li .text .title{
+    padding-top: 10px;
+    padding-left: 10px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #333;
+}
+#proBox ul li .text .price{
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 48px;
+    color: #e00a50;
+}
+#proBox ul li:hover .shadow{
+    display: block;
+}
+#proBox ul .shadow{
+    display: none;
+
+}
+#proBox ul .shadow .look a{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    background: #ed155b;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+#proBox ul .shadow .line{
+    position: absolute;
+    top:325px;
+    left: 10px;
+    background: #9f87a4;
+    width: 330px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.mainCon{
+    width: 100%;
+    height: 440px;
+    padding-bottom: 5px;
+}
+.mainCon .fl{
+    margin-right: 20px;
+    float: left;
+    padding: 10px;
+    background: #fff;
+}
+
+.mainCon ul{
+    background: #fff;
+}
+.mainCon ul li{
+    padding: 10px 10px  0 0;
+    width: 380px;
+    height: 205px;
+    background: #fff;
+    float: left;
+    position: relative;
+}
+.mainCon ul li a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.mainCon ul .li1,.mainCon ul .li3{
+    padding-left: 10px;
+}
+.mainCon ul .li3,.mainCon ul .li4{
+    padding-bottom: 10px;
+}
+
+.mainCon ul li .info{
+    position: absolute;
+    top:80px;
+    right: 20px;
+    width: 140px;
+    height: 125px;
+    text-align: center;
+    color: #000000;
+}
+.mainCon ul li .info .tit{
+    line-height: 20px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+}
+.mainCon ul li .info .subtit{
+    line-height: 20px;
+    font-size: 12px;
+}
+.mainCon ul li .info .sale{
+    padding-top: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.mainCon ul li .info .sale em{
+    color: #e00a50;
+}
+
+
+
+/*侧边栏开始*/
+#slide{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width:40px;
+    height:640px;
+    background-color: #444851;
+}
+#slide li{
+    position: relative;
+    top:135px;
+    margin-top: 10px;
+    padding:10px 0 0 10px;
+    height: 30px;
+}
+#slide .shop{
+    height: 130px;
+}
+#slide .shop a span{
+   display: block;
+    color: #dddddd;
+    width: 16px;
+    height: 48px;
+    line-height: 20px;
+    margin: 10px 0 10px 2px;
+}
+#slide .shop a span  i{
+    background: #ed145b;
+    padding: 1px;
+    border: 2px solid #ed145b;
+    border-radius: 50%;
+}
+#slide ul li:hover .bill{
+    display: block;
+ }
+.shopBox{
+    display: none;
+    position: absolute;
+    right: 40px;
+    top:0;
+    background: #fff;
+    border: 1px solid #dddddd;
+    width: 280px;
+    height: 650px;
+}
+.shopBox span{
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+#goclose{
+   margin-top: 5px;
+}
+#slide ul li .bill{
+    display: none;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #444851;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    top:0;
+    text-align: center;
+}
+#slide ul li .bill .triangle{
+    position: absolute;
+    left: 90px;
+    top:15px;
+    display: block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent  transparent transparent  #444851;
+}
+
+#slide a s{
+    background: url("../images/bar.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    z-index: 20;
+}
+#slide .login a s{
+    width: 18px;
+    height: 18px;
+}
+#slide .shop a s{
+    width: 24px;
+    height: 18px;
+    background-position: 0 -28px;
+}
+#slide .money a s{
+    background-position: 0 -57px;
+}
+#slide .heart a s{
+    width: 24px;
+    height: 18px;
+    background-position: 0 -85px;
+}
+#slide .foot a s{
+    width: 18px;
+    height: 24px;
+    background-position: 0 -110px;
+}
+#slide .top a s{
+    background-position: 0 -200px;
+}
+#slide .top{
+    /*display: none;*/
+    margin-top: 120px;
+}
+
+#slide li:hover{
+    background: #ed145b;
+}
+#slide .login:hover a s{
+    background-position: -33px 0;
+}
+#slide .shop:hover a s{
+    background-position:  -33px -28px;
+}
+#slide .money:hover a s{
+    background-position:  -33px -57px;
+}
+#slide .heart:hover a s{
+    background-position: -33px -85px;
+}
+#slide .foot:hover a s{
+    background-position:  -33px -110px;
+}
+#slide .login:hover #sBox{
+    display: block;
+}
+#sBox{
+    display: none;
+    border: 1px solid #dddddd;
+    border-right: none;
+    box-shadow: 0 2px 0 0 #dddddd;
+    background: #fff;
+    position: absolute;
+    right: 40px;
+    top:0;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+}
+#sBox i,#myBox i,#goclose{
+    background: url("../images/bar.png");
+    background-position: 0 -272px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#sBox img,#myBox img{
+    border-radius: 50%;
+}
+#sBox p,#myBox p{
+    line-height: 40px;
+}
+#sBox p a,#myBox p a{
+    color: red;
+    padding-left: 5px;
+}
+#sBox .triangle,#myBox .triangle{
+    position: relative;
+    left: 250px;
+    top: 10px;
+    display: block;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent  transparent transparent #fff;
+}
+
+
+#myBox{
+    display: none;
+    border: 1px solid #dddddd;
+    border-right: none;
+    box-shadow: 0 2px 0 0 #dddddd;
+    background: #fff;
+    position: absolute;
+    right: 40px;
+    top:345px;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+}
+
+
